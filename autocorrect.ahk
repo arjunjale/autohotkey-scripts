@@ -2,6 +2,12 @@ RAlt::Send !{tab}
 #IfWinActive
 return
 
+>^,::
+	Send {Volume_Mute} 
+	Send !{tab}
+#IfWinActive
+return
+
 ^+h::
 MsgBox, 4,, Hibernate?
 IfMsgBox Yes
@@ -144,4 +150,3 @@ return  ; This makes the above hotstrings do nothing so that they override the i
 ::ipad::iPad
 ::iphone::iPhone
 ::xps::XPS
-::dell::Dell
